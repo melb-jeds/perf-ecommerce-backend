@@ -1,8 +1,8 @@
+import Address from '@applications/domains/models/address.model'
+import Product from '@applications/domains/models/product.model'
+import User from '@applications/domains/models/user.model'
 import { OrderStatus } from '@commons/enums/order-status.enums'
 import { Nullable } from '@commons/types/nullable.type'
-import Address from '@domains/address.model'
-import Product from '@domains/product.model'
-import User from '@domains/user.model'
 
 export default class Order {
 	id: string

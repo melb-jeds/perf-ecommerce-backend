@@ -1,10 +1,10 @@
-import Category from '@domains/category.model'
-import Review from '@domains/review.model'
-import User from '@domains/user.model'
+import Category from '@applications/domains/models/category.model'
+import Review from '@applications/domains/models/review.model'
+import User from '@applications/domains/models/user.model'
 
 export default class Product {
 	id: string
-	title: string
+	name: string
 	description: string
 	price: number
 	stock: number
