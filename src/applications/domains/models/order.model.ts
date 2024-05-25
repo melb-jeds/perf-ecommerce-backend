@@ -12,6 +12,7 @@ export default class Order {
 	updatedAt: Date
 	shippedAt: Nullable<Date>
 	deliveredAt: Nullable<Date>
+	cancelledAt: Nullable<Date>
 	customer: User
 	product: Product
 }

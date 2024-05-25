@@ -1,4 +1,5 @@
 import { RoleEnum } from '@commons/enums/role.enum'
+import { Nullable } from '@commons/types/nullable.type'
 
 export default class User {
 	id: string
@@ -8,4 +9,5 @@ export default class User {
 	role: RoleEnum
 	createdAt: Date
 	updatedAt: Date
+	deletedAt: Nullable<Date>
 }
