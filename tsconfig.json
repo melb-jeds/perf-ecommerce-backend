@@ -14,9 +14,12 @@
 		"skipLibCheck": true,
 		"strictNullChecks": true,
 		"noImplicitAny": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
 		"strictBindCallApply": true,
 		"forceConsistentCasingInFileNames": false,
 		"noFallthroughCasesInSwitch": false,
+		"noImplicitOverride": true,
 		"paths": {
 			"@applications/*": ["src/applications/*"],
 			"@commons/*": ["src/commons/*"]
