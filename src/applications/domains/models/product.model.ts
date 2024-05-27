@@ -12,8 +12,8 @@ export default class Product {
 	images: string[]
 	createdAt: Date
 	updatedAt: Date
-	deletdAt: Nullable<Date>
+	deletedAt: Nullable<Date>
 	seller: User
-	categorieIds: string[]
+	categoryIds: string[]
 	reviews: Review[]
 }

@@ -1,6 +1,8 @@
+import { IRepositoryOptions } from '@commons/interfaces/repository-options.interface'
+
 export interface Repository<T> {
-	create(command: Partial<T>): Promise<T>
-	findById(id: string): Promise<T | null>
-	updateById(id: string, command: Partial<T>): Promise<void>
-	deleteById(id: string): Promise<void>
+	create(command: Partial<T>, options?: IRepositoryOptions): Promise<T>
+	findById(id: string, options?: IRepositoryOptions): Promise<T | null>
+	updateById(id: string, command: Partial<T>, options?: IRepositoryOptions): Promise<void>
+	deleteById(id: string, options?: IRepositoryOptions): Promise<void>
 }
