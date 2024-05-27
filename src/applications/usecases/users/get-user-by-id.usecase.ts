@@ -6,7 +6,7 @@ import { Inject, Injectable } from '@nestjs/common'
 import _ from 'lodash'
 
 @Injectable()
-export class GetUserById {
+export class GetUserByIdUsecase {
 	constructor(@Inject('UserRepository') private readonly userRepository: UserRepository) {}
 
 	public async handle(command: IdCommand): Promise<User> {

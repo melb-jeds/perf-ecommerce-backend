@@ -1,5 +1,4 @@
 import Review from '@applications/domains/models/review.model'
-import User from '@applications/domains/models/user.model'
 import { Nullable } from '@commons/types/nullable.type'
 
 export default class Product {
@@ -13,7 +12,7 @@ export default class Product {
 	createdAt: Date
 	updatedAt: Date
 	deletedAt: Nullable<Date>
-	seller: User
+	sellerId: string
 	categoryIds: string[]
 	reviews: Review[]
 }
