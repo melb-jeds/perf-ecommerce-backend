@@ -1,4 +1,4 @@
 import User from '@applications/domains/models/user.model'
-import { IBaseRepository } from '@applications/ports/repositories/base.repository'
+import { Repository } from '@applications/ports/repositories/repository.interface'
 
-export interface UserRepository extends IBaseRepository<User> {}
+export interface UserRepository extends Repository<User> {}

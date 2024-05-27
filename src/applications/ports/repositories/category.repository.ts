@@ -1,4 +1,4 @@
 import Category from '@applications/domains/models/category.model'
-import { IBaseRepository } from '@applications/ports/repositories/base.repository'
+import { Repository } from '@applications/ports/repositories/repository.interface'
 
-export interface CategoryRepository extends IBaseRepository<Category> {}
+export interface CategoryRepository extends Repository<Category> {}

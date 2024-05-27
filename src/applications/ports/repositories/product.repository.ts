@@ -1,7 +1,4 @@
-import { CreateReviewRepositoryCommand } from '@applications/commands/create-review-repository.command'
 import Product from '@applications/domains/models/product.model'
-import { IBaseRepository } from '@applications/ports/repositories/base.repository'
+import { Repository } from '@applications/ports/repositories/repository.interface'
 
-export interface ProductRepository extends IBaseRepository<Product> {
-	createReview(id: string, body: CreateReviewRepositoryCommand): Promise<void>
-}
+export interface ProductRepository extends Repository<Product> {}

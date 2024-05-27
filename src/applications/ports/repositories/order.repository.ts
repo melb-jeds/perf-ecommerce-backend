@@ -1,4 +1,4 @@
 import Order from '@applications/domains/models/order.model'
-import { IBaseRepository } from '@applications/ports/repositories/base.repository'
+import { Repository } from '@applications/ports/repositories/repository.interface'
 
-export interface OrderRepository extends IBaseRepository<Order> {}
+export interface OrderRepository extends Repository<Order> {}
