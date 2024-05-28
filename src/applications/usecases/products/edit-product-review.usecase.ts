@@ -4,7 +4,7 @@ import { ProductRepository } from '@applications/ports/repositories/product.repo
 import { ProductNotFoundException } from '@commons/exceptions/products/product-not-found.exception'
 import { ProductReviewNotFoundException } from '@commons/exceptions/products/product-review-not-found.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class EditProductReviewUsecase {

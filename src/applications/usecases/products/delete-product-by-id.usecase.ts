@@ -3,7 +3,7 @@ import Product from '@applications/domains/models/product.model'
 import { ProductRepository } from '@applications/ports/repositories/product.repository'
 import { ProductNotFoundException } from '@commons/exceptions/products/product-not-found.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class DeleteProductByIdUsecase {

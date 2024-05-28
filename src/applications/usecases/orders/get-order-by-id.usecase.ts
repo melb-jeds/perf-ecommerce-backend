@@ -3,7 +3,7 @@ import Order from '@applications/domains/models/order.model'
 import { OrderRepository } from '@applications/ports/repositories/order.repository'
 import { OrderNotFoundException } from '@commons/exceptions/orders/order-not-found.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class GetOrderByIdUsecase {

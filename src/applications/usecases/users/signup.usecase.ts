@@ -4,7 +4,7 @@ import { EnvService } from '@applications/ports/services/env.service'
 import { HashService } from '@applications/ports/services/hash.service'
 import { EmailExistsException } from '@commons/exceptions/users/email-exists.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class SignupUsecase {

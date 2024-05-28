@@ -9,7 +9,7 @@ import { UserRepository } from '@applications/ports/repositories/user.repository
 import { ProductNotFoundException } from '@commons/exceptions/products/product-not-found.exception'
 import { UserNotFoundException } from '@commons/exceptions/users/user-not-found.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class CreateOrderUsecase {

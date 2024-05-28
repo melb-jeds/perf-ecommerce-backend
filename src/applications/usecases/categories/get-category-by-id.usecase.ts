@@ -3,7 +3,7 @@ import Category from '@applications/domains/models/category.model'
 import { CategoryRepository } from '@applications/ports/repositories/category.repository'
 import { CategoryNotFoundException } from '@commons/exceptions/categories/category-id-not-found.exception copy'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class GetCategoryByIdUsecase {

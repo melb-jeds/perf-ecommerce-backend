@@ -3,10 +3,10 @@ import Category from '@applications/domains/models/category.model'
 import { CategoryRepository } from '@applications/ports/repositories/category.repository'
 import { CategoryNotFoundException } from '@commons/exceptions/categories/category-id-not-found.exception copy'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
-export class GetCategoryByIdUsecase {
+export class DeleteCategoryByIdUsecase {
 	constructor(@Inject('CategoryRepository') private readonly categoryRepository: CategoryRepository) {}
 
 	public async handle(command: IdCommand): Promise<void> {

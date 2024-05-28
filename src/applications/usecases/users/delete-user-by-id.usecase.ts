@@ -3,7 +3,7 @@ import User from '@applications/domains/models/user.model'
 import { UserRepository } from '@applications/ports/repositories/user.repository'
 import { UserNotFoundException } from '@commons/exceptions/users/user-not-found.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 @Injectable()
 export class DeleteUserByIdUsecase {
