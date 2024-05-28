@@ -1,15 +1,16 @@
 import { SignupCommand } from '@applications/commands/signup.command'
 import { UserRepository } from '@applications/ports/repositories/user.repository'
 import { EnvService } from '@applications/ports/services/env.service'
+import { HashService } from '@applications/ports/services/hash.service'
 import { EmailExistsException } from '@commons/exceptions/users/email-exists.exception'
 import { Inject, Injectable } from '@nestjs/common'
-import { hashSync } from 'bcrypt'
 import _ from 'lodash'
 
 @Injectable()
 export class SignupUsecase {
 	constructor(
 		@Inject('EnvService') private readonly envService: EnvService,
+		@Inject('HashService') private readonly hashService: HashService,
 		@Inject('UserRepository') private readonly userRepository: UserRepository
 	) {}
 
@@ -17,7 +18,7 @@ export class SignupUsecase {
 		await this.validate(command)
 
 		const { name, email, password } = command
-		const hashedPassword = hashSync(password, this.envService.getHashSalt())
+		const hashedPassword = this.hashService.hash(password, this.envService.getHashSalt())
 
 		await this.userRepository.create({
 			name,
