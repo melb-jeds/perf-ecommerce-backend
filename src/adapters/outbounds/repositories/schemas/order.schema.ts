@@ -23,13 +23,13 @@ export class OrderSchema {
 	@Prop({ default: new Date() })
 	updatedAt: Date
 
-	@Prop({ default: null })
+	@Prop({ default: null, type: 'date' })
 	shippedAt: Nullable<Date>
 
-	@Prop({ default: null })
+	@Prop({ default: null, type: 'date' })
 	deliveredAt: Nullable<Date>
 
-	@Prop({ default: null })
+	@Prop({ default: null, type: 'date' })
 	cancelledAt: Nullable<Date>
 
 	@Prop({ required: true })

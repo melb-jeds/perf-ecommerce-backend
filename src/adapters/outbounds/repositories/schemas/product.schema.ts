@@ -34,7 +34,7 @@ export class ProductSchema {
 	@Prop({ default: new Date() })
 	updatedAt: Date
 
-	@Prop({ default: null })
+	@Prop({ default: null, type: 'date' })
 	deletedAt: Nullable<Date>
 
 	@Prop({ required: true })
