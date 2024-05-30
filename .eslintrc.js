@@ -31,7 +31,7 @@ module.exports = {
 			},
 		],
 		'import/no-unused-modules': 'error',
-		'import/no-unassigned-import': 'error',
+		'import/no-unassigned-import': 'off',
 		'no-unused-vars': 'off',
 		'unused-imports/no-unused-imports': 'error',
 	},

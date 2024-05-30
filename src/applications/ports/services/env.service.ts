@@ -1,4 +1,4 @@
 export interface EnvService {
-	getHashSalt(): string
+	getHashSalt(): number
 	getJwtPrivateKey(): string
 }
